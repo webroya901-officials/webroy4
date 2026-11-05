@@ -1,0 +1,234 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@400;500;600&display=swap">
+<title>WEBROY4 — A place where royal-quality websites are created</title>
+<style>
+:root{--bg:#050505;--p:#0e0d0a;--p2:#17140b;--tx:#f7f1e1;--mu:#b8b09b;--au:#e0b84a;--au2:#f8e7a0;--ln:#33290f;--h:"DM Serif Display",Georgia,serif;--b:Poppins,system-ui,sans-serif;--l:Poppins,system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:radial-gradient(ellipse at 50% -5%,#5e4509 0,#050505 52%) fixed;color:var(--tx);font:17px/1.65 var(--b);padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+a{color:inherit;text-decoration:none}.w{max-width:960px;margin:auto;padding:0 20px}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:#050505e8;backdrop-filter:blur(10px);border-bottom:1px solid var(--ln)}
+.top .w{display:flex;align-items:center;justify-content:space-between;height:60px}
+.lg{font:400 24px var(--h);letter-spacing:.06em;color:var(--au2)}.top nav a{font:14px var(--l);letter-spacing:.06em;text-transform:uppercase;margin-left:16px;color:var(--mu)}
+.bt{font:600 14px var(--l);letter-spacing:.06em;text-transform:uppercase;border:0;border-radius:3px;padding:13px 22px;cursor:pointer;background:linear-gradient(135deg,var(--au2),var(--au) 55%,#a67c00);color:#1a1203;display:inline-block;text-align:center}
+.bt.g{background:none;border:1px solid var(--au);color:var(--au2)}
+.bt:focus-visible{outline:2px solid var(--au2);outline-offset:3px}
+.hero{padding:76px 0 56px}
+h1{font:400 clamp(40px,8.5vw,72px)/1.08 var(--h);margin:0 0 14px}h1 i{color:var(--au2)}
+.hero p{margin:0 0 26px;color:var(--mu);font-size:19px}
+.stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:34px;font:13px var(--l);letter-spacing:.1em;text-transform:uppercase;color:var(--mu)}.stats b{display:block;font:400 30px var(--h);color:var(--au2);letter-spacing:0}
+section{padding:54px 0}h2{font:400 clamp(32px,6vw,46px) var(--h);margin:0 0 4px;text-align:center}
+.k{font:600 13px var(--l);letter-spacing:.18em;text-transform:uppercase;color:var(--au);text-align:center;margin-bottom:6px}
+.sub{text-align:center;color:var(--mu);margin:0 0 28px;font-size:19px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}.chips span{border:1px solid var(--ln);background:var(--p);padding:9px 18px;border-radius:40px;font:15px var(--l)}
+.proj{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.pj{border:1px solid var(--ln);border-radius:6px;background:var(--p);overflow:hidden}.pj div{height:120px;background:linear-gradient(135deg,var(--x),var(--y));position:relative}.pj div:after{content:"";position:absolute;left:14px;bottom:14px;width:50%;height:8px;background:#fff8;border-radius:4px}
+.pj h3{font:400 22px var(--h);margin:14px 16px 2px}.pj p{margin:0 16px 14px;color:var(--mu);font-size:16px}
+.pr{font:400 24px var(--h);color:var(--au2)}
+.tl{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:18px;counter-reset:n}.tl div{border-top:2px solid var(--au);padding-top:12px;counter-increment:n}.tl div:before{content:"0" counter(n);font:20px var(--h);color:var(--au2);display:block}.tl h3{font:600 15px var(--l);letter-spacing:.08em;text-transform:uppercase;margin:4px 0}.tl p{margin:0;color:var(--mu);font-size:16px}
+.cta{text-align:center;border:1px solid var(--au);border-radius:6px;padding:40px 20px;background:var(--p)}
+footer{padding:28px 0;text-align:center;color:var(--mu);font:13px var(--l);letter-spacing:.06em;border-top:1px solid var(--ln)}
+.sh{position:fixed;inset:0;z-index:30;background:#050505f5;display:none;overflow:auto}.sh.on{display:block}
+.sh .in{max-width:540px;margin:auto;padding:calc(22px + env(safe-area-inset-top,0px)) 20px calc(30px + env(safe-area-inset-bottom,0px))}
+.dots{display:flex;gap:6px;margin:10px 0 20px}.dots i{flex:1;height:3px;background:var(--ln)}.dots i.on{background:var(--au)}
+.x{float:right;background:none;border:1px solid var(--ln);color:var(--tx);width:36px;height:36px;border-radius:50%;font-size:18px;cursor:pointer}
+.x:focus-visible{outline:2px solid var(--au2);outline-offset:3px}
+label{display:block;font:500 13px var(--l);letter-spacing:.08em;text-transform:uppercase;color:var(--mu);margin:14px 0 5px}
+input,select,textarea{width:100%;background:var(--p);color:var(--tx);border:1px solid var(--ln);border-radius:4px;padding:11px;font:16px var(--b)}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--au);box-shadow:0 0 0 2px #e0b84a55}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:12px}.st{display:none}.st.on{display:block}.nb{display:flex;gap:10px;margin-top:22px}.nb .bt{flex:1}
+.sm{width:100%;border-collapse:collapse}.sm td{padding:8px 0;border-bottom:1px solid var(--ln);vertical-align:top;font-size:16px}.sm td:first-child{color:var(--mu);width:36%}
+.er{color:#ff8a8a;font-size:15px;min-height:20px;margin-top:10px}.nt{color:var(--mu);font-size:15px;margin-top:14px}
+#spb{position:fixed;top:0;left:0;height:2px;width:0;z-index:99;background:linear-gradient(90deg,#a67c00,var(--au2),#a67c00);box-shadow:0 0 12px #f8e7a0aa}
+.hg{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center}.hg p{margin:0 0 26px}
+.ey{font:600 13px var(--l);letter-spacing:.18em;text-transform:uppercase;color:var(--au);margin-bottom:14px}
+.em{aspect-ratio:1;width:100%;max-width:380px;margin:auto;position:relative;border-radius:50%;border:1px solid #e0b84a44;display:grid;place-items:center;box-shadow:0 0 80px #e0b84a1a}
+.em:before{content:"";position:absolute;inset:11%;border-radius:50%;border:1px dashed #e0b84a66;animation:sp 40s linear infinite}
+.em:after{content:"";position:absolute;inset:27%;border-radius:50%;background:radial-gradient(circle at 35% 30%,#f8e7a0,#e0b84a 30%,#3b2a07 70%);box-shadow:0 0 60px #e0b84a44}
+.em b{position:relative;z-index:2;font-size:88px;color:#1a1203;font-weight:400}
+.fl{position:absolute;z-index:3;font:12px var(--l);letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--ln);background:#050505cc;padding:7px 12px;border-radius:30px}
+.fl:nth-of-type(1){top:8%;left:2%}.fl:nth-of-type(2){top:28%;right:-2%}.fl:nth-of-type(3){bottom:14%;left:4%}.fl:nth-of-type(4){bottom:4%;right:12%}
+@keyframes sp{to{transform:rotate(360deg)}}
+.mq{overflow:hidden;border-block:1px solid var(--ln);padding:14px 0;white-space:nowrap;font:13px var(--l);letter-spacing:.18em;text-transform:uppercase;color:var(--mu)}.mq div{display:inline-block;animation:mq 30s linear infinite}.mq span{margin-right:38px}.mq span:before{content:"✦ ";color:var(--au)}
+@keyframes mq{to{transform:translateX(-50%)}}
+.cds{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.cd{border:1px solid var(--ln);border-radius:16px;background:linear-gradient(180deg,#17140b99,#0e0d0a99);padding:24px;display:flex;flex-direction:column;position:relative;transition:.3s}.cd:hover{transform:translateY(-5px);border-color:#e0b84a88}
+.cd h3{font:400 26px var(--h);margin:0}.cd .pr{margin:6px 0 8px;font-size:32px}.cd p{margin:0 0 12px;color:var(--mu);font-size:16px}
+.cd ul{list-style:none;padding:0;margin:0 0 20px;flex:1;font-size:16px}.cd li{padding:5px 0;border-bottom:1px solid #33290f88}.cd li:before{content:"✦ ";color:var(--au);font-size:11px}
+.cd.f{border-color:var(--au);box-shadow:0 0 44px #e0b84a22}.cd.f:before{content:"Most chosen";position:absolute;top:-11px;left:22px;background:var(--au);color:#1a1203;font:12px var(--l);letter-spacing:.14em;text-transform:uppercase;padding:4px 12px;border-radius:20px}
+.cd .n{font:12px var(--l);letter-spacing:.2em;color:var(--au);margin-bottom:10px}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}.rv.in{opacity:1;transform:none}
+.qt{font:italic 400 clamp(22px,4vw,30px)/1.3 var(--h)!important;color:var(--au2)!important;margin:0 0 12px!important}
+.draft-banner{display:none;background:linear-gradient(90deg,#1a1508,#0e0d0a);border:1px solid var(--au);border-radius:6px;padding:12px 16px;margin-bottom:16px;font-size:15px;align-items:center;justify-content:space-between;gap:12px}
+.draft-banner.on{display:flex}
+.draft-banner button{background:none;border:1px solid var(--ln);color:var(--tx);padding:6px 12px;border-radius:4px;cursor:pointer;font:12px var(--l);letter-spacing:.08em;text-transform:uppercase}
+.draft-banner button:hover{border-color:var(--au)}
+.draft-banner button:focus-visible{outline:2px solid var(--au2);outline-offset:2px}
+.draft-banner .actions{display:flex;gap:8px}
+#toasts{position:fixed;bottom:calc(24px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);z-index:999;display:flex;flex-direction:column;gap:8px;align-items:center;pointer-events:none}
+#toasts div{background:#1a1508;border:1px solid #e0b84a;color:#f8e7a0;padding:10px 20px;border-radius:6px;font:13px Poppins,sans-serif;box-shadow:0 4px 20px #000a;transition:opacity .3s}
+@media(max-width:800px){.hg{grid-template-columns:1fr;text-align:center}.em{max-width:300px}.stats{justify-content:center!important}.top nav a{margin-left:10px;font-size:12px}}
+@media(prefers-reduced-motion:reduce){.em:before,.mq div{animation:none}.rv{opacity:1;transform:none}}
+</style></head><body><div id="spb"></div>
+<header class="top"><div class="w"><a class="lg" href="#">♛ WEBROY4</a><nav><a href="#work">Work</a><a href="#plans">Plans</a><a href="#path">Journey</a></nav></div></header>
+<main>
+<div class="hero w"><div class="hg"><div><div class="ey">♛ Royal Web Studio</div><h1>Websites with a <i>royal</i> finish.</h1><p class="qt">“A place where royal-quality websites are created.”</p><p>We design and build elegant, fast, mobile-first websites that make your business look like the only choice.</p><button class="bt" onclick="op()">Book Now</button> <a class="bt g" href="#plans">Explore Plans</a>
+<div class="stats"><div><b>5</b>Packages</div><div><b>100%</b>Custom</div><div><b>Mobile</b>First</div></div></div>
+<div class="em"><b>♛</b><span class="fl">Design</span><span class="fl">Develop</span><span class="fl">Launch</span><span class="fl">Grow</span></div></div></div>
+<div class="mq"><div><span>Business sites</span><span>Online stores</span><span>Restaurants</span><span>Portfolios</span><span>Landing pages</span><span>SaaS products</span><span>Redesigns</span><span>Mobile first</span><span>Business sites</span><span>Online stores</span><span>Restaurants</span><span>Portfolios</span><span>Landing pages</span><span>SaaS products</span><span>Redesigns</span><span>Mobile first</span></div></div>
+
+<section class="rv"><div class="w"><div class="k">What we craft</div><h2>One studio, every kind of site</h2><p class="sub">Pick the format. We bring the finish.</p>
+<div class="chips"><span>Business</span><span>Online store</span><span>Restaurant</span><span>Portfolio</span><span>Landing page</span><span>SaaS</span><span>Redesign</span></div></div></section>
+
+<section id="work" class="rv"><div class="w"><div class="k">Showcase</div><h2>Our Work</h2><p class="sub">A glimpse of the styles we create.</p><div class="proj" id="pj"></div></div></section>
+
+<section id="plans" class="rv"><div class="w"><div class="k">Pricing</div><h2>Choose your crown</h2><p class="sub">Five packages. Pick one to start your brief.</p><div class="cds" id="rw"></div></div></section>
+
+<section class="rv"><div class="w"><div class="k">Capabilities</div><h2>Beyond just pages</h2><p class="sub">Everything your site needs to work for you.</p>
+<div class="cds"><div class="cd"><h3>Lead capture</h3><p>Enquiry forms and contact buttons that turn visitors into customers.</p></div><div class="cd"><h3>Online selling</h3><p>Product pages, carts and checkout for stores.</p></div><div class="cd"><h3>Content tools</h3><p>Blogs and galleries you can update yourself.</p></div><div class="cd"><h3>Motion &amp; polish</h3><p>Smooth animations that add a premium feel.</p></div><div class="cd"><h3>Search ready</h3><p>Clean structure and metadata so Google can find you.</p></div><div class="cd"><h3>Integrations</h3><p>Maps, analytics, booking and email tools connected.</p></div></div></div></section>
+
+<section id="path" class="rv"><div class="w"><div class="k">The journey</div><h2>From hello to launch</h2><p class="sub">Simple, transparent, and in your control.</p>
+<div class="tl"><div><h3>Choose</h3><p>Select a plan.</p></div><div><h3>Brief</h3><p>Tell us your vision.</p></div><div><h3>Confirm</h3><p>Review every detail.</p></div><div><h3>Pay</h3><p>Advance by UPI.</p></div><div><h3>Build</h3><p>We craft your site.</p></div><div><h3>Launch</h3><p>Go live, handover.</p></div></div></div></section>
+
+<section><div class="w"><div class="cta"><h2>Ready to be crowned?</h2><p class="sub">Start your brief in two minutes.</p><button class="bt" onclick="op()">Book Now</button></div></div></section>
+</main>
+<footer>♛ WEBROY4 · webroya901@gmail.com</footer>
+
+<div class="sh" id="sh" role="dialog" aria-modal="true" aria-labelledby="sh-title" aria-hidden="true">
+<div class="in"><button class="x" onclick="cl()" aria-label="Close booking form">×</button>
+<div class="k" id="sh-title" style="text-align:left">Royal booking</div>
+<div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
+<div class="draft-banner" id="db"><span>✦ We found an unfinished brief. Continue where you left off?</span>
+<div class="actions"><button onclick="restoreDraft()">Resume</button><button onclick="discardDraft()">Discard</button></div></div>
+<div class="st on" id="s0"><h2 style="text-align:left">About you</h2>
+<label for="n">Name</label><input id="n" autocomplete="name">
+<label for="b">Business / company</label><input id="b" autocomplete="organization">
+<div class="g2"><div><label for="e">Email</label><input id="e" type="email" autocomplete="email"></div><div><label for="p">Phone</label><input id="p" type="tel" autocomplete="tel"></div></div></div>
+<div class="st" id="s1"><h2 style="text-align:left">Your project</h2>
+<div class="g2"><div><label for="t">Website type</label><select id="t"><option>Business</option><option>Online store</option><option>Restaurant</option><option>Portfolio</option><option>Landing page</option><option>SaaS</option></select></div><div><label for="pl">Plan</label><select id="pl"></select></div></div>
+<label for="pg">Number of pages</label><select id="pg"><option>1–3</option><option>4–5</option><option>6–8</option><option>9–12</option><option>13+</option></select>
+<label for="d">Design preferences</label><textarea id="d" rows="2" placeholder="Colours, mood, sites you admire"></textarea>
+<label for="a">Additional requirements</label><textarea id="a" rows="2"></textarea></div>
+<div class="st" id="s2"><h2 style="text-align:left">Review &amp; confirm</h2><table class="sm" id="sm"></table><p class="nt">Nothing is charged here. After you confirm, you’ll send the brief to us and then pay the advance by UPI.</p></div>
+<div class="st" id="s3"><h2 id="s3h" style="text-align:left">Brief ready ✦</h2><p id="s3p">Tap <b>Copy brief</b>, then paste it into an email or message to <b>webroya901@gmail.com</b>.</p>
+<div class="nb" id="s3b" style="flex-direction:column"><a class="bt" id="gm" target="_blank" rel="noopener">Send by Gmail</a><a class="bt g" id="ml" href="#">Open email app</a><button class="bt g" id="cp" type="button">Copy brief</button></div><button class="bt" id="dn" type="button" style="display:none;margin-top:22px;width:100%" onclick="cl()">Close</button></div>
+<div class="er" id="er" role="alert" aria-live="polite"></div>
+<div class="nb" id="nv"><button class="bt g" id="bk" onclick="mv(-1)">Back</button><button class="bt" id="nx" onclick="mv(1)">Continue</button></div>
+</div></div>
+<div id="toasts" aria-live="polite"></div>
+
+<script>
+var PL=[["Standard",30000,"Up to 3 pages · responsive · contact form"],["Premium",45000,"Up to 8 pages · custom design · basic SEO"],["Premium Pro",60000,"Up to 12 pages · animations · SEO + analytics"],["Ultra Premium",80000,"Up to 15 pages · advanced features · priority support"],["Luxury",95000,"Unlimited pages · bespoke design · dedicated manager"]];
+var PJ=[["Luxury Business","Refined corporate presence","#5e4509","#7c5cff"],["Online Store","Catalogue, cart, checkout","#0b6b4d","#6ee7b7"],["Restaurant","Menu, gallery, bookings","#8a2a16","#fbbf24"],["Portfolio","Showcase for creatives","#8a6a14","#67e8f9"],["Landing Page","Built to convert","#9d174d","#fda4af"],["SaaS Product","Pricing and product pages","#2b2412","#818cf8"]];
+var MAIL="webroya901@gmail.com";
+var $=function(i){return document.getElementById(i)};
+var st=0,DRAFT_KEY="webroy4_brief_draft",FIELDS=["n","b","e","p","t","pl","pg","d","a"],suppressSave=false,saveTimer=null,lastFocus=null;
+function inr(n){return "₹"+n.toLocaleString("en-IN")}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+
+$("pj").innerHTML=PJ.map(function(p){return '<div class="pj"><div style="--x:'+p[2]+';--y:'+p[3]+'"></div><h3>'+p[0]+'</h3><p>'+p[1]+'</p></div>'}).join("");
+$("rw").innerHTML=PL.map(function(p,i){return '<div class="cd'+(i==1?' f':'')+'"><h3>'+p[0]+'</h3><div class="pr">'+inr(p[1])+' <small style="font-size:13px;color:var(--mu)">starting</small></div><ul>'+p[2].split(" · ").map(function(x){return "<li>"+x+"</li>"}).join("")+'</ul><button class="bt'+(i==1?'':' g')+'" onclick="op('+i+')">Choose '+p[0]+'</button></div>'}).join("");
+$("pl").innerHTML=PL.map(function(p,i){return '<option value="'+i+'">'+p[0]+' — '+inr(p[1])+'</option>'}).join("");
+
+function toast(m){var t=document.createElement("div");t.textContent=m;$("toasts").appendChild(t);setTimeout(function(){t.style.opacity=0;setTimeout(function(){t.remove()},300)},2600)}
+function getDraft(){try{var r=localStorage.getItem(DRAFT_KEY);return r?JSON.parse(r):null}catch(e){return null}}
+function hasContent(d){return d&&(d.n||d.b||d.e||d.p||d.d||d.a)}
+function saveDraftNow(){
+  if(suppressSave)return;
+  try{var d={};FIELDS.forEach(function(k){d[k]=$(k).value});localStorage.setItem(DRAFT_KEY,JSON.stringify(d))}catch(e){}
+}
+function queueSave(){clearTimeout(saveTimer);saveTimer=setTimeout(saveDraftNow,400)}
+function clearDraft(){try{localStorage.removeItem(DRAFT_KEY)}catch(e){}}
+function restoreDraft(){
+  var d=getDraft();if(d){suppressSave=true;FIELDS.forEach(function(k){if(d[k]!=null)$(k).value=d[k]});suppressSave=false}
+  $("db").classList.remove("on");toast("Brief restored");
+}
+function discardDraft(){clearDraft();$("db").classList.remove("on");toast("Draft discarded")}
+FIELDS.forEach(function(k){$(k).addEventListener("input",queueSave);$(k).addEventListener("change",queueSave)});
+
+function show(n){
+  st=n;
+  for(var i=0;i<4;i++){$("s"+i).classList.toggle("on",i==n)}
+  var dots=document.querySelectorAll(".dots i");for(var j=0;j<dots.length;j++)dots[j].classList.toggle("on",j<=n);
+  $("bk").style.display=n==0?"none":"";
+  $("nv").style.display=n==3?"none":"flex";
+  $("nx").textContent=n==2?"Confirm brief":"Continue";
+  $("er").textContent="";
+  $("sh").scrollTop=0;
+}
+function op(i){
+  lastFocus=document.activeElement;
+  if(typeof i==="number")$("pl").value=i;
+  var d=getDraft();
+  $("db").classList.toggle("on",!!hasContent(d)&&!hasContent(currentVals()));
+  show(0);
+  $("sh").classList.add("on");$("sh").setAttribute("aria-hidden","false");
+  document.body.style.overflow="hidden";
+  setTimeout(function(){$("n").focus()},50);
+}
+function currentVals(){var d={};FIELDS.forEach(function(k){d[k]=$(k).value});return d}
+function cl(){
+  $("sh").classList.remove("on");$("sh").setAttribute("aria-hidden","true");
+  document.body.style.overflow="";
+  if(lastFocus&&lastFocus.focus)lastFocus.focus();
+}
+document.addEventListener("keydown",function(e){if(e.key==="Escape"&&$("sh").classList.contains("on"))cl()});
+
+function validate(){
+  if(st==0){
+    if(!$("n").value.trim())return "Please enter your name.";
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test($("e").value.trim()))return "Please enter a valid email address.";
+    if($("p").value.replace(/\D/g,"").length<10)return "Please enter a valid phone number.";
+  }
+  return "";
+}
+function briefText(){
+  var v=currentVals(),p=PL[+v.pl];
+  return "WEBROY4 — NEW BRIEF\n\nName: "+v.n+"\nBusiness: "+(v.b||"-")+"\nEmail: "+v.e+"\nPhone: "+v.p+"\n\nWebsite type: "+v.t+"\nPlan: "+p[0]+" ("+inr(p[1])+" starting)\nPages: "+v.pg+"\nDesign preferences: "+(v.d||"-")+"\nAdditional requirements: "+(v.a||"-")+"\n\nPayment: 50% advance via UPI after scope confirmation.";
+}
+function buildSummary(){
+  var v=currentVals(),p=PL[+v.pl];
+  var rows=[["Name",v.n],["Business",v.b||"—"],["Email",v.e],["Phone",v.p],["Type",v.t],["Plan",p[0]+" · "+inr(p[1])+" starting"],["Pages",v.pg],["Design",v.d||"—"],["Extras",v.a||"—"],["Advance (50%)",inr(p[1]/2)]];var mx=parseInt((v.pg.match(/\d+/g)||[]).pop(),10),LIM=[3,8,12,15,999];if(mx>LIM[+v.pl])rows.push(["Note","This page count is above the plan’s limit. We’ll confirm the final scope and quote with you."]);
+  $("sm").innerHTML=rows.map(function(r){return "<tr><td>"+r[0]+"</td><td>"+esc(r[1])+"</td></tr>"}).join("");
+}
+var sending=false;
+function resetForm(){suppressSave=true;["n","b","e","p","d","a"].forEach(function(k){$(k).value=""});["t","pl","pg"].forEach(function(k){$(k).selectedIndex=0});suppressSave=false}
+function fallback(){sending=false;$("nx").disabled=false;$("s3h").textContent="Brief ready ✦";$("s3p").innerHTML="We couldn’t send it automatically from here. Tap <b>Copy brief</b>, then paste it into an email or message to <b>"+MAIL+"</b>.";$("s3b").style.display="flex";$("dn").style.display="none";show(3)}
+function sendBrief(sub){
+  if(sending)return;sending=true;$("nx").disabled=true;$("nx").textContent="Sending…";
+  var v=currentVals(),p=PL[+v.pl],ctl=window.AbortController?new AbortController():null,to=setTimeout(function(){if(ctl)ctl.abort()},12000);
+  fetch("https://formsubmit.co/ajax/"+MAIL,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify({_subject:sub,_template:"table",_replyto:v.e,Name:v.n,Business:v.b,Email:v.e,Phone:v.p,Type:v.t,Plan:p[0]+" ("+inr(p[1])+" starting)",Pages:v.pg,Design:v.d,Requirements:v.a}),signal:ctl?ctl.signal:undefined})
+  .then(function(r){return r.json()}).then(function(j){
+    clearTimeout(to);
+    if(j&&(j.success===true||j.success==="true")){sending=false;$("nx").disabled=false;clearDraft();$("s3h").textContent="Brief sent ✦";$("s3p").textContent="Thank you! We’ve received your brief and will email you the scope and quote soon.";$("s3b").style.display="none";$("dn").style.display="block";show(3);resetForm()}
+    else fallback()
+  }).catch(function(){clearTimeout(to);fallback()});
+}
+function mv(dir){
+  if(dir<0){show(Math.max(0,st-1));return}
+  var err=validate();if(err){$("er").textContent=err;return}
+  saveDraftNow();
+  if(st==0){show(1)}
+  else if(st==1){buildSummary();show(2)}
+  else if(st==2){
+    var sub="WEBROY4 brief — "+$("n").value.trim()+" — "+PL[+$("pl").value][0],body=briefText();
+    $("gm").href="https://mail.google.com/mail/?view=cm&fs=1&to="+MAIL+"&su="+encodeURIComponent(sub)+"&body="+encodeURIComponent(body);
+    $("ml").href="mailto:"+MAIL+"?subject="+encodeURIComponent(sub)+"&body="+encodeURIComponent(body);
+    sendBrief(sub);
+  }
+}
+$("cp").addEventListener("click",function(){var t=briefText();function fb(){var a=document.createElement("textarea");a.value=t;document.body.appendChild(a);a.select();try{document.execCommand("copy");toast("Brief copied")}catch(e){toast("Copy failed")}a.remove()}if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(function(){toast("Brief copied")},fb)}else fb()});
+$("gm").addEventListener("click",function(){clearDraft()});
+$("ml").addEventListener("click",function(){clearDraft()});
+if(/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)){$("gm").style.display="none";$("ml").className="bt g";$("ml").textContent="Open email app";$("ml").target="_blank";$("ml").rel="noopener";$("cp").className="bt"}
+
+window.addEventListener("scroll",function(){
+  var h=document.documentElement,m=h.scrollHeight-h.clientHeight;
+  $("spb").style.width=(m>0?h.scrollTop/m*100:0)+"%";
+},{passive:true});
+var io=null;
+if("IntersectionObserver" in window){
+  io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.08});
+  document.querySelectorAll(".rv").forEach(function(el){io.observe(el)});
+}else{document.querySelectorAll(".rv").forEach(function(el){el.classList.add("in")})}
+</script></body></html>
